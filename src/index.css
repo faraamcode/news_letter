@@ -1,13 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tomato{
+  background:  hsl(4, 100%, 67%);
+}
+.tomato-color{
+  color: hsl(4, 100%, 67%);
+}
+
+
+.darkGrey{
+background:   hsl(234, 29%, 20%);
+}
+.chocolateGrey{
+  background: hsl(235, 18%, 26%);
+}
+.grey{
+  background: hsl(231, 7%, 60%);
+}
+.white{
+  color: hsl(0, 0%, 100%);
+}
+.max{
+  max-height: 700px;
+  max-width: 1000px;
+}
+.input{
+  border: 2px solid hsl(231, 7%, 60%);
+}
+.input:active ~ .input{
+  border: 2px solid black;
+}
+.input:focus ~ .input{
+  border: 2px solid black;
+}
+.main-container{
+  flex-direction: column-reverse;
+}
+.max-success{
+  max-height: 480px;
+}
+/*
+.input:invalid ~ .error-msg{
+  display: inline;
+}
+.input:focus ~ .input{
+  border-color: black;
+} */
+
