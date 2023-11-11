@@ -54,7 +54,7 @@ background:   hsl(234, 29%, 20%);
   flex-direction: column-reverse;
 }
 .max-success{
-  max-height: 480px;
+  max-height: 600px;
 }
 /*
 .input:invalid ~ .error-msg{
